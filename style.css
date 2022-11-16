@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;900&display=swap');
+
+:root {
+    --fonteprincipal: 'Work Sans', sans-serif;
+    --cortexto: #3D0CED;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fonteprincipal);
+    font-size: 0.940rem;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100hw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.tree-container {
+    width: 95vw;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3vh 3vw;
+    background-color: #F0F5F5;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.179);
+}
+
+.tree-container .avatar {
+    width: 205px;
+    height: 205px;
+    border: 2px solid var(--cortexto);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tree-container .avatar img {
+    width: 195px;
+    border-radius: 50%;
+}
+
+.tree-container .insta-user {
+    margin-top: 2vh;
+    color: var(--cortexto);
+}
+
+.tree-container .links-container {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F0F5F5;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.068);
+
+}
+
+.tree-container .links-container a {
+    text-decoration: none;
+    font-weight: 400;
+    border: 1px solid var(--cortexto);
+    margin: 10px 0px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.tree-container .links-container a:hover {
+    color: #F0F5F5;
+    background-color: var(--cortexto);
+    box-shadow:  0px 0px 5px var(--cortexto);
+    scale: 1.02;
+    letter-spacing: 3px;
+    font-size: 0.7rem;
+    transition: 0.2s;
+
+}
+
+
+a img {
+    width: 16px;       
+
+}
+
+.socials-container {
+    margin-top: 10px;
+    display: flex;
+    gap: 40px;
+}
+
+.socials-container a:hover {
+    scale: 1.3;
+    transition:  0.8s;
+    rotate: -360deg;
+}
